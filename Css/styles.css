@@ -8,13 +8,20 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Separa el logo a la izquierda y el menú a la derecha */
     background-color: #111;
-    padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center; /* Mantiene la foto y el título alineados */
 }
 
 nav ul {
@@ -89,4 +96,10 @@ footer {
 
 .whatsapp-float img:hover {
     transform: scale(1.2);
+}
+
+
+.nav-photo {
+
+
 }
