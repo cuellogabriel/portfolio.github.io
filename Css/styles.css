@@ -9,9 +9,10 @@ body {
 
 header {
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: space-between; /* Separa el logo a la izquierda y el menú a la derecha */
+    align-items: center;
+    justify-content: center;
     background-color: #111;
+    padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -19,14 +20,30 @@ header {
     z-index: 100;
 }
 
-.nav-container {
-    display: flex;
-    align-items: center; /* Mantiene la foto y el título alineados */
+.nav-photo {
+    height: 60px; /* Ajusta el tamaño de la foto */
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px; /* La deja fija en la izquierda */
+    top: 50%;
+    transform: translateY(-50%); /* Centra la imagen verticalmente */
+}
+
+.header-content {
+    text-align: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0;
 }
 
 nav ul li {
@@ -38,6 +55,7 @@ nav ul li a {
     color: #00aaff;
     text-decoration: none;
 }
+
 
 section {
     padding: 100px 20px;
@@ -96,10 +114,4 @@ footer {
 
 .whatsapp-float img:hover {
     transform: scale(1.2);
-}
-
-
-.nav-photo {
-
-
 }
